@@ -1,0 +1,10 @@
+language: go
+
+sudo: required
+
+services:
+  - docker
+
+script:
+  - make build-image
+  - make push-image
