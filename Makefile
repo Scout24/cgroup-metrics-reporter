@@ -1,4 +1,4 @@
-IMAGE_NAME=cgroup-metrics-reporter
+IMAGE_NAME=mseiwald/cgroup-metrics-reporter
 IMAGE_TAG=$(TRAVIS_BUILD_NUMBER)
 
 build-image:
