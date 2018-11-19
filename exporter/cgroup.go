@@ -59,7 +59,6 @@ func (e *CGroupExporter) Export(c collector.Statsd) bool {
 		log.Printf("cpuStats: %s\n", cpuStats)
 
 		tags = append(tags, collector.CreateTag("service", task[1]))
-		tags = append(tags, collector.CreateTag("task_id", task[0]))
 		log.Printf("tags: %s\n", tags)
 
 		c.Count("nr_periods", cpuStats["nr_periods"], tags, 1)
