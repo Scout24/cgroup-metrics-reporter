@@ -19,7 +19,7 @@ func main() {
 	c := collector.NewLoopCollector(
 		config.StatsdCollectorAddress,
 		config.Namesapce,
-		[]string{collector.CreateTag("instance_id", handler.InstanceId)},
+		[]string{},
 	)
 
 	e := exporter.NewCGroupExporter(handler)
